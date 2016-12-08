@@ -37,7 +37,13 @@ angular.module('main')
                         controller: 'PlaylistCtrl'
                     }
                 }
-            });
+            })
+
+        .state('login', {
+            url: '/login',
+            templateUrl: 'templates/login.html',
+            controller: 'AppCtrl'
+        });
 
     })
 ;
