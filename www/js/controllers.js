@@ -1,4 +1,4 @@
-  angular.module('main.controllers', [])
+  angular.module('main.controllers', ['ngCordova'])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout, $state) {
 
@@ -45,4 +45,28 @@
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
   $scope.singleData = $stateParams;
-});
+})
+
+  .controller('MapControl', function($scope,$cordovaGeolocation) {
+      setTimeout(function () {
+          showMap();
+          var map;
+          function showMap() {
+              map = new google.maps.Map(document.getElementById('map'), {
+                  center: {lat: -34.397, lng: 150.644},
+                  zoom: 8
+              });
+          }
+      },500);
+     /* var posOptions = {timeout: 10000, enableHighAccuracy: false};
+      $cordovaGeolocation
+          .getCurrentPosition(posOptions)
+          .then(function (position) {
+              var lat  = position.coords.latitude
+              var long = position.coords.longitude
+              alert('Lat:'+lat+"Long:"+long);
+          }, function(err) {
+              // error
+              alert('NO');
+          });*/
+  });

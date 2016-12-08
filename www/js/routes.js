@@ -39,11 +39,21 @@ angular.module('main')
                 }
             })
 
-        .state('login', {
-            url: '/login',
-            templateUrl: 'templates/login.html',
-            controller: 'AppCtrl'
-        });
+            .state('app.map', {
+                url: '/map',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/map.html',
+                        controller: 'MapControl'
+                    }
+                }
+            })
+
+            .state('login', {
+                url: '/login',
+                templateUrl: 'templates/login.html',
+                controller: 'AppCtrl'
+            });
 
     })
 ;

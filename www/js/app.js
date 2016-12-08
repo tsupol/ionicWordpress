@@ -8,8 +8,7 @@ angular.module('main', ['ionic', 'main.controllers','ngCordova','ngCordovaOauth'
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
-    // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-    // for form inputs)
+
     if (window.cordova && window.cordova.plugins.Keyboard) {
       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
       cordova.plugins.Keyboard.disableScroll(true);
@@ -34,7 +33,7 @@ angular.module('main', ['ionic', 'main.controllers','ngCordova','ngCordovaOauth'
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/login');
 })
-
+//ionicWordpress
     .controller('sampleFacebookController',function($scope,$http,$cordovaOauth){
       $scope.facebookLogin = function(){
         $cordovaOauth.facebook("1185056838245000", ["public_profile"]).then(function(result) {
