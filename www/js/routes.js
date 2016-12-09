@@ -19,6 +19,16 @@ angular.module('main')
                     }
                 }
             })
+
+            .state('app.news', {
+                url: '/news',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/page-list_news.html'
+                    }
+                }
+            })
+
             .state('app.playlists', {
                 url: '/playlists',
                 views: {
@@ -48,6 +58,7 @@ angular.module('main')
                     }
                 }
             })
+
 
             .state('login', {
                 url: '/login',

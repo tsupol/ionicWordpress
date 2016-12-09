@@ -1,30 +1,45 @@
 <ion-modal-view>
-  <ion-header-bar>
-    <h1 class="title">Login</h1>
-    <div class="buttons">
-      <button class="button button-clear" ng-click="closeLogin()">Close</button>
+  <ion-content>
+    <div class="form-login">
+        <div class="row responsive-xs">
+          <div class="col div-head-login">
+              <label>"The absolute solution for bakery."</label>
+          </div>
+        </div>
+        <div class="row responsive-lg">
+          <form>
+                  <div class="list list-inset2 insert-login">
+                    <label class="item item-input">
+                      <input type="text" placeholder="ชื่อ">
+                    </label>
+                  </div>
+                  <div class="list list-inset2 insert-login">
+                      <label class="item item-input">
+                        <input type="text" placeholder="รหัสผ่าน">
+                      </label>
+                  </div>
+                  <div class="list list-inset2 insert-login">
+                        <button class="button" ng-click="login()">
+                          <label>เข้าใช้งาน</label>
+                        </button>
+                  </div>
+          </form>
+        </div>
+        <div class="row responsive-lg">
+          <div class="list list-inset2 label-login">
+            <label>ลืมรหัสผ่าน ?</label>
+          </div>
+          <div class="list list-inset2 label-login">
+            <hr class="style-line">
+          </div>
+        </div>
+        <div class="row responsive-lg">
+          <div class="list list-inset2 face-login">
+            <button class="button button-outline button-light" ng-click="loginFacebook()">
+              <label>ล็อกอินด้วยเฟสบุ๊ค</label>
+            </button>
+          </div>
+        </div>
     </div>
-  </ion-header-bar>
-  <ion-content class="has-footer">
-    <form ng-submit="doLogin()">
-      <div class="list">
-        <label class="item item-input">
-          <span class="input-label">Username   </span>
-          <input type="text" ng-model="loginData.username">
-        </label>
-        <label class="item item-input">
-          <span class="input-label">Password</span>
-          <input type="password" ng-model="loginData.password">
-        </label>
-        <label class="item">
-          <button class="button button-block button-positive" type="submit">Log in</button>
-        </label>
-      </div>
-    </form>
   </ion-content>
-  <ion-footer-bar align-title="center">
-    <form ng-controller="sampleFacebookController">
-      <a ng-click="facebookLogin()"><h1 class="title" style="color: #0c60ee">Login with Facebook</h1></a>
-    </form>
-  </ion-footer-bar>
 </ion-modal-view>

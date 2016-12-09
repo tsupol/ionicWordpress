@@ -6,30 +6,16 @@
   // when they are recreated or on app start, instead of every page change.
   // To listen for when this page is active (for example, to refresh data),
   // listen for the $ionicView.enter event:
-  $scope.$on('$ionicView.enter', function(e) {
-    $scope.loginData.username = "";
-    $scope.loginData.password = "";
-  });
-
-  // Form data for the login modal
-  $scope.loginData = {};
-
-
-
-  // Perform the login action when the user submits the login form
-  $scope.doLogin = function() {
-    //console.log('Doing login', $scope.loginData);
-      var packdata = {
-          username : $scope.loginData.username,
-          password : $scope.loginData.password
-      }
-      if(packdata.username=="admin" && packdata.password=="1234"){
-        $state.go('app.playlists');
-      }else{
-        alert('คุณไม่ใช่สมาชิก');
-      }
-
-  };
+  //$scope.$on('$ionicView.enter', function(e) {
+  //});
+    $scope.login = function () {
+        //alert('111');
+        $state.go("app.news");
+    }
+    $scope.loginFacebook = function () {
+        //alert('111');
+        $state.go("app.news");
+    }
 })
 
 .controller('PlaylistsCtrl', function($scope) {
