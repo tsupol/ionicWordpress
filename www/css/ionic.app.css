@@ -33,14 +33,6 @@ $dark:                            #444 !default;
   font-weight: normal;
   font-style: normal; }
 
-
-/*@font-face {
-  font-family: "Ionicons";
-  src: url("../fonts/dbhelvethaicaxli.ttf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}*/
-
 .ion, .ionicons,
 .ion-alert:before,
 .ion-alert-circled:before,
@@ -5716,21 +5708,6 @@ ion-tabs.tabs-striped.tabs-color-active-dark .tab-item.tab-item-active, ion-tabs
   border-width: 1px;
   border-style: solid;
   font-size: 16px; }
-
-.item-menu {
-  border-color: #008faf;
-  background-color: #008faf;
-  color: #FFFFFF;
-  position: relative;
-  z-index: 2;
-  display: block;
-  margin: -1px;
-  padding: 10px;
-  border-width: 1px;
-  border-style: double;
-  height: 133px;
-}
-
   .item h2 {
     margin: 0 0 2px 0;
     font-size: 16px;
@@ -6670,11 +6647,7 @@ button.item.item-button-right {
   margin: 20px 10px;
   border-radius: 2px;
   background-color: #fff; }
-.list-inset2 {
-  overflow: hidden;
-  margin: 15px 10px;
-  border-radius: 0px;
-  background-color: #fff; }
+
 .card {
   padding-top: 1px;
   padding-bottom: 1px;
@@ -9846,129 +9819,188 @@ a.button {
 Put the main theme style here
 */
 .playlist-wrap h1 {
-  color: #000000; }
+  color: #008faf; }
 
+.bar-stable.bar-header {
+  display: none; }
 
 /*-------------------------------------------------------------------------------------*/
-.form-login{
-  background-image: url("../img/back_01.png");
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-position: inherit;
-  background-size: 100%;
-  height: 100%;
-  width: 100%;
-}
-.div-head-login{
-  text-align: center;
-  margin-top: 50%;
-}
-.div-head-login label{
-  font-size: medium;
-  font-weight: 500;
-  color: #ffc423;
-}
-.insert-login label{
-  background-color: #33a5bf;
-  border: none;
-  color: #FFFFFF;
-}
-.insert-login .button label{
-  color: #008faf;
-  background-color: #ffc423;
-  font-size: large;
-  font-weight: 700;
-}
-.insert-login{
-  background-color: #008faf;
-  border: none;
-  text-align: center;
-}
-.label-login{
-  background-color: #008faf;
-  border: none;
-  text-align: center;
-}
-.label-login label{
-  background-color: #008faf;
-  border: none;
-  color: #FFFFFF;
-  font-weight: 100;
-}
-.face-login{
-  top: 10px;
-  background-color: #008faf;
-  border: none;
-  text-align: center;
-}
-.face-login .button{
+#login-page .form-login {
   width: 100%;
   border-radius: 0px;
-}
-.face-login .button label{
+  top: 20px; }
+
+#login-page .face-login .button label {
   color: #FFFFFF;
   font-size: large;
-  font-weight: 500;
-}
-.insert-login input[type=text]{
+  font-weight: 500; }
+
+#login-page .insert-login input[type=text] {
   background-color: #33a5bf;
   color: #FFFFFF;
   border: none;
   font-size: medium;
   font-family: "Ionicons";
-  width: 100%;
-}
-.insert-login input:-moz-placeholder{
-  color: #FFFFFF;
-}
-.insert-login input:-ms-input-placeholder{
-  color: #FFFFFF;
-}
-.insert-login input::-webkit-input-placeholder{
-  color: #FFFFFF;
-}
-.insert-login .button{
+  width: 100%; }
+
+#login-page .insert-login input:-moz-placeholder {
+  color: #FFFFFF; }
+
+#login-page .insert-login input:-ms-input-placeholder {
+  color: #FFFFFF; }
+
+#login-page .insert-login input::-webkit-input-placeholder {
+  color: #FFFFFF; }
+
+#login-page .insert-login .button {
   background-color: #ffc423;
   border: none;
   color: #33a5bf;
   font-weight: bold;
   width: 100%;
   font-size: medium;
-  border-radius: 0px;
-}
-.div-md-login{
+  border-radius: 0px; }
+
+#login-page .div-md-login {
   text-align: center;
-  margin: 10px 10px;
-}
-.div-md-login p label{
+  margin: 10px 10px; }
+
+#login-page .div-md-login p label {
   font-size: medium;
   color: #FFFFFF;
-  font-weight: 100;
-}
-hr.style-line{
+  font-weight: 100; }
+
+#login-page hr.style-line {
   padding: 0;
   border: none;
   border-top: 1px solid #D9D9D9;
-  color: #FFFFFF;
-  text-align: center;
-}
+  color: #d1d3d6;
+  text-align: center; }
 
-hr.style-line::after{
+#login-page hr.style-line::after {
   content: "   หรือ   ";
   display: inline-block;
   position: relative;
   top: -0.5em;
-  font-size:medium;
+  font-size: medium;
   font-weight: 100;
   padding: 0 0.5em;
   background-color: #008faf;
-  color: #D9D9D9;
-}
+  color: #D9D9D9; }
 
-.item-menu img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-}
+#menu-page .item-menu {
+  text-align: center;
+  border-color: #008faf;
+  background-color: #008faf;
+  color: #FFFFFF;
+  height: 133px; }
 
+#menu-page .item-avatar,
+#menu-page .item-avatar .item-content,
+#menu-page .item-avatar-left,
+#menu-page .item-avatar-left .item-content {
+  padding-left: 72px;
+  min-height: 72px; }
 
+#menu-page .item-avatar > img:first-child,
+#menu-page .item-avatar .item-image,
+#menu-page .item-avatar .item-content > img:first-child,
+#menu-page .item-avatar .item-content .item-image,
+#menu-page .item-avatar-left > img:first-child,
+#menu-page .item-avatar-left .item-image,
+#menu-page .item-avatar-left .item-content > img:first-child,
+#menu-page .item-avatar-left .item-content .item-image {
+  position: absolute;
+  top: 16px;
+  left: 30px;
+  max-width: 40px;
+  max-height: 40px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; }
+
+#menu-page .second-menu {
+  text-align: center;
+  border-color: #ffc423;
+  background-color: #ffc423;
+  color: #008faf;
+  height: 83px;
+  border: 0; }
+
+#menu-page .second-menu p {
+  font-size: larger; }
+
+#menu-page .second-menu-item {
+  margin-top: -1px; }
+
+#menu-page .group-img-menu .img-menu {
+  max-width: 28px;
+  max-height: 28px;
+  padding-right: 10px;
+  border: 0; }
+
+#menu-page .group-img-menu label {
+  font-size: larger;
+  font-weight: 500;
+  color: #008faf; }
+
+#menu-page .group-img-menu {
+  max-height: 42px;
+  margin-top: -10px; }
+
+#list_news-page .header-menu {
+  max-height: 45px;
+  background-color: #008faf;
+  width: 98%;
+  top: -1px;
+  color: #FFFFFF;
+  margin-top: 2px;
+  border-radius: 5px; }
+
+#list_news-page .button-outline.btn-header-menu {
+  border-color: #FFFFFF;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: thin; }
+
+#list_news-page .header-menu img {
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  left: 2px; }
+
+#list_news-page .header-menu label {
+  color: #FFFFFF;
+  font-size: small; }
+
+#list_news-page .herder-list {
+  width: 100%;
+  background-color: #FFFFFF; }
+
+#list_news-page .herder-list-content {
+  background-color: #008faf;
+  width: 98%;
+  top: -1px;
+  color: #FFFFFF;
+  max-height: 25px;
+  margin-top: 2px; }
+
+#list_news-page .img-list {
+  max-width: 15px;
+  max-height: 15px; }
+
+#list_news-page .herder-list-content .col {
+  padding: 0px;
+  margin-top: -3px; }
+
+#list_news-page .herder-list-content label {
+  font-weight: 500;
+  font-size: small; }
+
+#list_news-page .img-item {
+  max-width: 170px; }
+
+#list_news-page .content-list-item label {
+  font-size: small;
+  font-weight: 500;
+  color: #008faf; }

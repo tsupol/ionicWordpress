@@ -6,6 +6,7 @@
 
       <ion-nav-buttons side="left">
         <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+          <label>เมนูหลัก</label>
         </button>
       </ion-nav-buttons>
     </ion-nav-bar>
@@ -13,35 +14,66 @@
   </ion-side-menu-content>
 
   <ion-side-menu side="left">
-    <ion-content>
+    <ion-content id="menu-page">
       <ion-list>
         <div class="header-menu">
-          <div class="item-menu">
-            <div class="col-33">
-              <img src="../img/img-01.png">
-            </div>
-            <div class="col-67">
-              <label>Sompong Himalee</label>
-              <p>ทะเบียนรถ : d4 4567</p>
-            </div>
+          <div class="item item-menu item-avatar">
+                <img src="../img/img-01.png">
+                <label>Sompong Himalee</label>
+                <p>ทะเบียนรถ : d4 4567</p>
+          </div>
+        </div>
+      </ion-list>
+      <ion-list>
+        <div class="second-menu" align="center">
+          <div class="second-menu-item"><br />
+            <p>รวมค่าคอมมิชชั่นที่ได้เดือนนี้</p>
+            <p><strong>3400 บาท</strong></p>
           </div>
         </div>
       </ion-list>
       <ion-list>
         <ion-item menu-close href="#/app/news">
-          ข่าวสาร
+          <div class="group-img-menu">
+            <img class="img-menu" src="../img/img-04.png"/>
+            <label>ข่าวสาร</label>
+          </div>
         </ion-item>
         <ion-item menu-close href="#/app/map">
-          โปรโมชั่น
+          <div class="group-img-menu">
+            <img class="img-menu" src="../img/img-02.png"/>
+            <label>โปรโมชั่น</label>
+          </div>
         </ion-item>
         <ion-item menu-close href="#/app/search">
-          ค่าคอมมิชชั่น
+          <div class="group-img-menu">
+              <img class="img-menu" src="../img/img-03.png"/>
+              <label>ค่าคอมมิชชั่น</label>
+          </div>
         </ion-item>
         <ion-item menu-close href="#/app/browse">
-          ศูนย์ของฝาก
+            <div class="group-img-menu">
+              <img class="img-menu" src="../img/img-05.png"/>
+              <label>ศูนย์ของฝาก</label>
+            </div>
         </ion-item>
         <ion-item menu-close href="#/app/playlists">
-          กล่องข้อความ
+          <div class="group-img-menu">
+            <img class="img-menu" src="../img/img-06.png"/>
+            <label>กล่องข้อความ</label>
+          </div>
+        </ion-item>
+        <ion-item menu-close>
+          <div class="group-img-menu">
+            <img class="img-menu" src="../img/img-07.png"/>
+            <label>ติดต่อศรีฟ้า</label>
+          </div>
+        </ion-item>
+        <ion-item menu-close>
+          <div class="group-img-menu">
+            <img class="img-menu" src="../img/img-08.png"/>
+            <label>ออกจากระบบ</label>
+          </div>
         </ion-item>
       </ion-list>
     </ion-content>
